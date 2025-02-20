@@ -1,14 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Brygada_1918, Rubik } from "next/font/google";
 import "./globals.css";
+import Header from "./Component/Header";
+import { Footer } from "./Component/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const brygada = Brygada_1918({
   subsets: ["latin"],
+  weight: ["400", "700"], 
+  variable: "--font-brygada",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const rubik = Rubik({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-rubik",
 });
 
 export const metadata = {
@@ -20,9 +25,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${brygada.variable} ${rubik.variable} antialiased max-w-[1280px]`}
       >
+        <Header></Header>
         {children}
+      <Footer></Footer>
       </body>
     </html>
   );
