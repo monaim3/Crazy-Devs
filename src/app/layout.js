@@ -3,10 +3,9 @@ import "./globals.css";
 import Header from "./Component/Header";
 import { Footer } from "./Component/Footer";
 
-
 const brygada = Brygada_1918({
   subsets: ["latin"],
-  weight: ["400", "700"], 
+  weight: ["400", "700"],
   variable: "--font-brygada",
 });
 
@@ -24,12 +23,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${brygada.variable} ${rubik.variable} antialiased max-w-[1280px]`}
-      >
+      <body className={`${brygada.variable} ${rubik.variable} antialiased`}>
         <Header></Header>
         {children}
-      <Footer></Footer>
+        <Footer></Footer>
       </body>
     </html>
   );
