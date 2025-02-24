@@ -33,6 +33,7 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
   const nextSlide = () => {
     setCurrentSlide((prev) => {
       const nextIndex = (prev + 1) % showcaseData.length;

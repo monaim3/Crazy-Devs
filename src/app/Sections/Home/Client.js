@@ -41,7 +41,7 @@ const clients = [
 ];
 
 
-export default function Clients() {
+export default function Clients({ noPadding }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAutoPlaying, setIsAutoPlaying] = useState(true);
     const [visibleItems, setVisibleItems] = useState(5);
@@ -94,7 +94,7 @@ export default function Clients() {
   
     
     return (
-      <section className="py-20 bg-gray-50">
+      <section className={`${noPadding ? 'mb-10' : 'py-20 bg-gray-50'}`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold textcolor mb-4">

@@ -13,26 +13,26 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [bgColor, setBgColor] = useState("bg-[#FEF4EA] py-4");
 
-   
+
     const router = useRouter();
     const navigation = [
         { name: 'Home', href: '/' },
-        { name: 'About Us', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Career', href: '#career' },
+        { name: 'About Us', href: '/aboutus' },
+        { name: 'Services', href: '/services' },
+        { name: 'Career', href: '/career' },
     ];
     useEffect(() => {
         const handleScroll = () => {
-          if (window.scrollY > 50) {
-            setBgColor("bg-[#fff] shadow-md py-4 "); 
-          } else {
-            setBgColor("bg-[#FEF4EA]");
-          }
+            if (window.scrollY > 50) {
+                setBgColor("bg-[#fff] shadow-md py-4 ");
+            } else {
+                setBgColor("bg-[#FEF4EA]");
+            }
         };
-    
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-      }, []);
+    }, []);
     return (
         <header className={`fixed w-full ${bgColor}  backdrop-blur-md z-50 `}>
             <nav className="container mx-auto px-4 sm:px-6 lg:px-8 lg:pt-4">
@@ -52,19 +52,20 @@ export default function Header() {
                     <div className="hidden md:block">
                         <div className="ml-12 flex items-center justify-center space-x-8">
                             {navigation.map((item) => (
-                                <Link 
+                                <Link
                                     key={item.name}
                                     href={item.href}
-                                    className={`transition-colors mt-4 ${
-                                      router.pathname === item.href
-                                        ? "text-[#FF5C35] font-semibold"
-                                        : "text-[#1C1E22] "
-                                    }`}
+                                    className={`transition-colors mt-4 ${router.pathname === item.href
+                                            ? "text-[#FF5C35] font-semibold"
+                                            : "text-[#1C1E22] "
+                                        }`}
                                 >
                                     {item.name}
                                 </Link>
                             ))}
-                            <Button className=" mt-4 bg-[#FF5C35]">Contact Us</Button>
+                            <Link href="/contact">
+                                <Button className="mt-4 bg-[#FF5C35]">Contact Us</Button>
+                            </Link>
                         </div>
                     </div>
 

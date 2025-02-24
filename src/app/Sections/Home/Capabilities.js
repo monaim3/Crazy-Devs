@@ -57,12 +57,12 @@ const capabilities = [
   }
 ];
 
-export default function Capabilities() {
+export default function Capabilities({ noPadding }) {
   const [activeTab, setActiveTab] = useState(capabilities[0].id);
   const activeCapability = capabilities.find(cap => cap.id === activeTab);
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className={`${noPadding ? 'pt-10 pb-20' : 'py-20 bg-gray-50'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">

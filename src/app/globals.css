@@ -24,7 +24,30 @@ html,body{
 body {
   font-family: var(--font-rubik), var(--font-brygada),  sans-serif;
 }
+.missionbtn{
+  border-radius: 15px 15px 0px 0px;
+}
+.vissonbtn{
+  border-radius: 0px 20px 0px 20px;
+  margin-top: 15px;
 
+}
+.simplebar-wrapper {
+  display: none;
+}
+a.VJL48qbQzWENTFAh1Knk.e9TS9yoMqqIN2PqBo1QG.f3c_Dda7HKHqraeedxG1 {
+  display: none !important;
+}
+.VJL48qbQzWENTFAh1Knk {
+
+  display: none !important;
+ 
+}
+.iLlmw9nvWQp6MsANxMu_.XXKN9NWALj8Xe4ed0s7r {
+  background-color: var(--primary-color-level4, rgba(0, 105, 255, 0.065));
+  color: #e70009;
+  font-weight: bold;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -109,4 +132,17 @@ section#counter-section {
     align-items: center;
 
 }
+}
+
+
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
