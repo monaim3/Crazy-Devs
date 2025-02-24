@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const CommonHero = ({
   imageSrc,
@@ -11,7 +12,7 @@ const CommonHero = ({
   onButtonClick,
   imageAlt = "Hero Image",
   imagePosition = "left", // "left" or "right"
-  padding = "py-28 lg:py-36 sm:pt-32 sm:pb-16",
+  padding = " pt-32 pb-16 lg:pb-32 ",
   margin = "mx-auto",
   containerClasses = "container mx-auto px-4 sm:px-6 lg:px-8",
   textAlignment = "center", // "left" or "right"
@@ -46,12 +47,13 @@ const CommonHero = ({
                 {title}
               </span>
             </h1>
-            <p className="mt-6 text-lg textcolor max-w-2xl mx-auto lg:mx-0">
+            <p className="mt-6 text-lg textcolor lg:text-right ">
               {description}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
               {buttonText && (
-                <Button
+               <Link href="/contact">
+                 <Button
                   size="lg"
                   variant="outline"
                   className="border-[#FF5C35] text-[#FF5C35] bg-transparent hover:bg-transparent getStartedBtn"
@@ -59,6 +61,7 @@ const CommonHero = ({
                 >
                   {buttonText}
                 </Button>
+               </Link>
               )}
             </div>
           </div>

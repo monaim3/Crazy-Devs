@@ -77,24 +77,24 @@ function ServiceCard({ service }) {
 
 export default function Business() {
   return (
-    <main className="bg-[#FEF4EA] container mx-auto py-12 px-8">
+    <main className="bg-[#FEF4EA] container mx-auto py-12 lg:px-8">
       <section className="bg-white  mx-auto px-4 flex flex-col md:flex-row gap-4">
         <div className="p-8 rounded-lg  lg:w-2/4">
-          <h1 className="text-3xl font-bold text-slate-900 mb-4">
+          <h1 className="text-3xl font-bold text-slate-900 mb-4 text-center md:text-left">
             Small Business Bundle
           </h1>
-          <p className="text-slate-600 mb-4">
+          <p className="text-slate-600 mb-4 text-center md:text-left">
             The Starter edition of every Drazydevs product, bundled together at
             a discounted price for your startup or small business. Find and
             reach customers, grow sales and get paid faster, and organize
             customer data.
           </p>
-          <p className="text-slate-600 mb-6">— all on one unified platform.</p>
+          <p className="text-slate-600 mb-6 text-center md:text-left">— all on one unified platform.</p>
 
           <Button
             size="lg"
             variant="outline"
-            className="w-[100%] lg:w-[70%] border-[#FF5C35] text-[#FF5C35] bg-transparent hover:bg-transparent  getStartedBtn"
+            className="w-[100%] lg:w-[70%] border-[#FF5C35] text-[#FF5C35] bg-transparent hover:bg-transparent   mx-auto lg:mx-0"
           >
             Get Started
           </Button>

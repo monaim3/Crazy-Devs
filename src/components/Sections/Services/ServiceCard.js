@@ -69,17 +69,17 @@ const services = [
 
 export default function ServiceCard() {
   return (
-    <main className="min-h-screen bg-[#FEF4EA] pt-2 pb-4 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <main className="min-h-screen bg-[#FEF4EA] pt-2 pb-0 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto lg:px-8">
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-2 border-gray-100 transition-all duration-300">
               <CardHeader>
-                <div className="flex gap-4 items-center border-b border-gray-500 pb-24">
+                <div className="flex gap-4 items-center border-b border-gray-500 pb-8">
                   <div className="">
-                    <Image src={service.image} alt="Service Image" className=" "></Image>
+                    <Image src={service.image} alt="Service Image" width={50} height={50} className=" "></Image>
                   </div>
                   <div>
                     <CardTitle className="text-xl font-semibold text-gray-900 flex ">

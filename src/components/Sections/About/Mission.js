@@ -50,9 +50,9 @@ export default function Mission() {
                 <div className="flex justify-center gap-0 mb-12 -mt-32">
                     <button
                         onClick={() => setActiveTab('mission')}
-                        className={`px-16 text-2xl font-semibold missionbtn transition-all ${activeTab === 'mission'
-                                ? 'bg-white text-[#FF5733] py-4' 
-                                : 'bg-[#FF5733] text-[#fff]  py-2'
+                        className={`px-16 text-2xl font-semibold  transition-all ${activeTab === 'mission'
+                                ? 'bg-[#F6F9FC] text-[#FF5733] py-4 inactivebtn' 
+                                : 'bg-[#FF5733] text-[#fff]  py-2 missionbtn mt-4'
                             }`}
                     >
                         Mission
@@ -60,8 +60,8 @@ export default function Mission() {
                     <button
                         onClick={() => setActiveTab('vision')}
                         className={`px-16 text-2xl font-semibold transition-all vissonbtn ${activeTab === 'vision'
-                                ? 'bg-[#fff] text-[#FF5733]   py-2'
-                                : ' bg-[#FF5733] text-white py-2' 
+                                 ? 'bg-[#F6F9FC] text-[#FF5733] py-4 visionbtn' 
+                                : 'bg-[#FF5733] text-[#fff]  py-2 inactiveBtn mt-4'
                             }`}
                     >
                         Vision
