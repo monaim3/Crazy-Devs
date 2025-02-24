@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Header from "./Component/Header";
-import Hero from "./Sections/Home/Hero";
-import Counter from "./Sections/Home/Counter";
-import Solutions from "./Sections/Home/Solution";
-import Building from "./Sections/Home/Building";
-import Clients from "./Sections/Home/Client";
-import Showcase from "./Sections/Home/ShowCase";
-import Capabilities from "./Sections/Home/Capabilities";
+import Header from "../components/Header";
+import Hero from "../components/Sections/Home/Hero";
+import Counter from "../components/Sections/Home/Counter";
+import Solutions from "../components/Sections/Home/Solution";
+import Building from "../components/Sections/Home/Building";
+import Clients from "../components/Sections/Home/Client";
+import Showcase from "../components/Sections/Home/ShowCase";
+import Capabilities from "../components/Sections/Home/Capabilities";
 
 export default function Home() {
   return (

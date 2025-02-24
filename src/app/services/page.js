@@ -1,8 +1,8 @@
 import React from 'react';
-import ServiceHero from '../Sections/Services/ServiceHero';
+import ServiceHero from '../../components/Sections/Services/ServiceHero';
 
-import ServiceCard from '../Sections/Services/ServiceCard';
-import Business from '../Sections/Services/Business';
+import ServiceCard from '../../components/Sections/Services/ServiceCard';
+import Business from '../../components/Sections/Services/Business';
 
 const page = () => {
     return (

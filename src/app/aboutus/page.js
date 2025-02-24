@@ -1,8 +1,8 @@
 import React from 'react';
-import AboutHero from '../Sections/About/AboutHero';
-import Mission from '../Sections/About/Mission';
-import Capabilities from '../Sections/Home/Capabilities';
-import Clients from '../Sections/Home/Client';
+import AboutHero from '../../components/Sections/About/AboutHero';
+import Mission from '../../components/Sections/About/Mission';
+import Capabilities from '../../components/Sections/Home/Capabilities';
+import Clients from '../../components/Sections/Home/Client';
 
 const page = () => {
     return (

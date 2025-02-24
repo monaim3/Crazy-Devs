@@ -6,7 +6,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
-import logo from '../../../public/images/logo.png';
+import logo from '../../public/images/logo.png';
 import { useRouter } from 'next/navigation';
 
 export default function Header() {
@@ -34,8 +34,8 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     return (
-        <header className={`fixed w-full ${bgColor}  backdrop-blur-md z-50 `}>
-            <nav className="container mx-auto px-4 sm:px-6 lg:px-8 lg:pt-4">
+        <header className={`fixed w-full ${bgColor}  backdrop-blur-md z-50 py-4`}>
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-8 ">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0">
                         <Link href="/" className="flex items-center space-x-2">
@@ -50,21 +50,21 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:block">
-                        <div className="ml-12 flex items-center justify-center space-x-8">
+                        <div className="ml-12 flex items-center space-x-8">
                             {navigation.map((item) => (
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className={`transition-colors mt-4 ${router.pathname === item.href
-                                            ? "text-[#FF5C35] font-semibold"
-                                            : "text-[#1C1E22] "
+                                    className={`transition-colors  ${router.pathname === item.href
+                                        ? "text-[#FF5C35] font-semibold"
+                                        : "text-[#1C1E22] "
                                         }`}
                                 >
                                     {item.name}
                                 </Link>
                             ))}
                             <Link href="/contact">
-                                <Button className="mt-4 bg-[#FF5C35]">Contact Us</Button>
+                                <Button className=" bg-[#FF5C35]">Contact Us</Button>
                             </Link>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ export default function Header() {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none "
                         >
                             {isMenuOpen ? (
                                 <X className="block h-6 w-6" aria-hidden="true" />
@@ -87,7 +87,7 @@ export default function Header() {
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
                     <div className="md:hidden">
-                        <div className="px-2 pt-2 pb-3 space-y-1">
+                        <div className=" pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <Link
                                     key={item.name}

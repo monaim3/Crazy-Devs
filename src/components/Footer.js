@@ -10,7 +10,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../public/images/footer (2).png";
+import logo from "../../public/images/footerImg.png";
 export function Footer() {
   return (
     <footer className="bg-[#1E2024] text-white w-full py-12 px-4 sm:px-6 lg:px-8">

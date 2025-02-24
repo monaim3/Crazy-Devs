@@ -1,6 +1,6 @@
 import React from 'react';
-import ContactHero from '../Sections/Contact/ContactHero';
-import Schedule from '../Sections/Contact/Schedule';
+import ContactHero from '../../components/Sections/Contact/ContactHero';
+import Schedule from '../../components/Sections/Contact/Schedule';
 
 const page = () => {
     return (
