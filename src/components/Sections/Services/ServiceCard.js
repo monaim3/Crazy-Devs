@@ -2,13 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Check, CheckCircle } from "lucide-react";
-import web from '../../../../public/images/webapp.png';
-import mobile from '../../../../public/images/mobile.png';
-import claud from '../../../../public/images/claud.png';
-import digital from '../../../../public/images/digital.png';
-import product from '../../../../public/images/product.png';
-import software from '../../../../public/images/software.png';
+import { Check } from "lucide-react";
+import web from "../../../../public/images/webapp.png";
+import mobile from "../../../../public/images/mobile.png";
+import claud from "../../../../public/images/claud.png";
+import digital from "../../../../public/images/digital.png";
+import product from "../../../../public/images/product.png";
+import software from "../../../../public/images/software.png";
 import Image from "next/image";
 const services = [
   {
@@ -71,15 +71,22 @@ export default function ServiceCard() {
   return (
     <main className="min-h-screen bg-[#FEF4EA] pt-2 pb-0 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto lg:px-8">
-
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="border-2 border-gray-100 transition-all duration-300">
+            <Card
+              key={index}
+              className="border-2 border-gray-100 transition-all duration-300"
+            >
               <CardHeader>
                 <div className="flex gap-4 items-center border-b border-gray-500 pb-8">
                   <div className="">
-                    <Image src={service.image} alt="Service Image" width={50} height={50} className=" "></Image>
+                    <Image
+                      src={service.image}
+                      alt="Service Image"
+                      width={50}
+                      height={50}
+                      className=" "
+                    ></Image>
                   </div>
                   <div>
                     <CardTitle className="text-xl font-semibold text-gray-900 flex ">
@@ -87,9 +94,8 @@ export default function ServiceCard() {
                     </CardTitle>
                   </div>
                 </div>
-
               </CardHeader>
-              <CardContent className=''>
+              <CardContent className="">
                 <h3 className="text-lg font-300 text-gray-700 mb-4">
                   Key Features
                 </h3>

@@ -52,16 +52,16 @@ const CommonHero = ({
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
               {buttonText && (
-               <Link href="/contact">
-                 <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-[#FF5C35] text-[#FF5C35] bg-transparent hover:bg-transparent getStartedBtn"
-                  onClick={onButtonClick}
-                >
-                  {buttonText}
-                </Button>
-               </Link>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-[#FF5C35] text-[#FF5C35] bg-transparent hover:bg-transparent getStartedBtn"
+                    onClick={onButtonClick}
+                  >
+                    {buttonText}
+                  </Button>
+                </Link>
               )}
             </div>
           </div>

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Header from "../components/Header";
 import Hero from "../components/Sections/Home/Hero";
 import Counter from "../components/Sections/Home/Counter";
 import Solutions from "../components/Sections/Home/Solution";
@@ -10,15 +8,14 @@ import Capabilities from "../components/Sections/Home/Capabilities";
 
 export default function Home() {
   return (
-   <div>
-   
-     <Hero></Hero>
-     <Counter></Counter>
-     <Solutions></Solutions>
-     <Building></Building>
-     <Clients></Clients>
-     <Showcase></Showcase>
-     <Capabilities></Capabilities>
-   </div>
+    <div>
+      <Hero></Hero>
+      <Counter></Counter>
+      <Solutions></Solutions>
+      <Building></Building>
+      <Clients></Clients>
+      <Showcase></Showcase>
+      <Capabilities></Capabilities>
+    </div>
   );
 }

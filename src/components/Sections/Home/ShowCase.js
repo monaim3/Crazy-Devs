@@ -1,18 +1,12 @@
-
-
 "use client";
 import { useEffect, useState } from "react";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-import bg from "../../../../public/images/svgviewer-png-output (1).png";
 import female from "../../../../public/images/female.png";
-
-
 
 const showcaseData = [
   {
@@ -23,7 +17,8 @@ const showcaseData = [
   },
   {
     id: 2,
-    title: "How startups quickly scale their digital presence with our solutions.",
+    title:
+      "How startups quickly scale their digital presence with our solutions.",
     image: female,
     services: ["Web Development", "Mobile App Development"],
   },
@@ -31,8 +26,6 @@ const showcaseData = [
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const nextSlide = () => {
     setCurrentSlide((prev) => {
@@ -62,13 +55,13 @@ export default function Home() {
         <div className="mb-8">
           <h2 className="text-lg text-[#213343]">Show Case</h2>
           <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold textcolor max-w-4xl mt-2">
-            How other companies successfully generate & qualify leads with Crazy Devs
+            How other companies successfully generate & qualify leads with Crazy
+            Devs
           </h1>
         </div>
 
         <div className="relative lg:mt-24 lg:px-12 w-[60%] mx-auto">
-         
-          <div className="relative w-full h-[600px] lg:h-[350px]"> 
+          <div className="relative w-full h-[600px] lg:h-[350px]">
             {showcaseData.map((showcase, index) => (
               <div
                 key={showcase.id}
@@ -87,9 +80,9 @@ export default function Home() {
                           variant="secondary"
                           className="z-10 w-[150px] lg:w-44 h-12 textcolor shadow-lg transform transition-all duration-300 hover:scale-105 "
                           style={{
-                            background: "linear-gradient(to right, #f8f2ea 30%, #979b9b 90%)",
+                            background:
+                              "linear-gradient(to right, #f8f2ea 30%, #979b9b 90%)",
                           }}
-                          
                         >
                           {service}
                         </Button>
@@ -114,19 +107,19 @@ export default function Home() {
                   <div className="flex flex-col">
                     <div className="relative transform perspective-1000">
                       <motion.div
-                        initial={{ x: 100, opacity: 0 }} 
-                        animate={{ x: 0, opacity: 1 }}   
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 2, ease: "easeOut" }}
                       >
-                        <Card
-                          className="bg-[#213343] text-white px-6 py-2 lg:-rotate-12 lg:px-4 lg:py-12 rounded-2xl relative group cursor-pointer transform-style-3d transition-transform duration-700 ease-in-out"
-                        >
+                        <Card className="bg-[#213343] text-white px-6 py-2 lg:-rotate-12 lg:px-4 lg:py-12 rounded-2xl relative group cursor-pointer transform-style-3d transition-transform duration-700 ease-in-out">
                           <div>
                             <h3 className="text-xl font-semibold">
                               {showcase.title}
                             </h3>
                             <div className="flex justify-between mt-12">
-                              <p className="text-gray-300">Read The Full Story</p>
+                              <p className="text-gray-300">
+                                Read The Full Story
+                              </p>
                               <div className="relative">
                                 <button
                                   onClick={(e) => {
@@ -142,7 +135,7 @@ export default function Home() {
                             </div>
                           </div>
                         </Card>
-                        </motion.div>
+                      </motion.div>
                     </div>
                   </div>
                 </div>
@@ -156,8 +149,9 @@ export default function Home() {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-16 h-1 rounded-full transition-all duration-300 ${index === currentSlide ? "bg-gray-900" : "bg-gray-300"
-                  }`}
+                className={`w-16 h-1 rounded-full transition-all duration-300 ${
+                  index === currentSlide ? "bg-gray-900" : "bg-gray-300"
+                }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
@@ -167,10 +161,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-
-
-
-
-

@@ -1,13 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import {
-  Monitor,
-  Smartphone,
-  Cloud,
-  LineChart,
-  Box,
-  Users,
-} from "lucide-react";
+
 import web from "../../../../public/images/webapp.png";
 import mobile from "../../../../public/images/mobile.png";
 import claud from "../../../../public/images/claud.png";
@@ -19,7 +11,6 @@ import Image from "next/image";
 const services = [
   {
     title: "Web App Development",
-
     image: web,
   },
   {
@@ -89,7 +80,9 @@ export default function Business() {
             reach customers, grow sales and get paid faster, and organize
             customer data.
           </p>
-          <p className="text-slate-600 mb-6 text-center md:text-left">— all on one unified platform.</p>
+          <p className="text-slate-600 mb-6 text-center md:text-left">
+            — all on one unified platform.
+          </p>
 
           <Button
             size="lg"
