@@ -1,3 +1,4 @@
+"use client";
 import {
   Facebook,
   Instagram,
@@ -11,7 +12,25 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/images/footerImg.png";
+import { useLocale } from "next-intl";
+import { useTransition } from "react";
+import { useRouter } from "next/navigation";
 export function Footer() {
+  const router = useRouter();
+  const locale = useLocale();
+  const [isPending, startTransition] = useTransition();
+  const getNewLocale = () => (locale === 'en' ? 'ar' : 'en');
+
+  // Function to handle language change
+  const handleLanguageChange = () => {
+    const newLocale = getNewLocale();
+    const currentPath = window.location.pathname;
+    const newPath = `/${newLocale}${currentPath.substring(3)}`;
+    startTransition(() => {
+      router.replace(newPath);
+    });
+  };
+  console.log(router)
   return (
     <footer className="bg-[#1E2024] text-white w-full py-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
@@ -146,9 +165,9 @@ export function Footer() {
         </div>
 
         <div className="mt-8 text-right">
-          <Link href="/ar" className="text-white hover:text-gray-300">
+          <button disabled={isPending} onClick={handleLanguageChange}  className="text-white hover:text-gray-300">
             En Ar
-          </Link>
+          </button>
         </div>
       </div>
     </footer>

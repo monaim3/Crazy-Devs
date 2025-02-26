@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <main
-      className="lg:h-[130vh] py-12 px-2 md:p-8 lg:py-16 lg:px-12"
+      className=" py-12 px-2 md:p-8 lg:py-16 lg:px-12"
       style={{
         backgroundImage: `url('/images/svgviewer-png-output (1).png')`,
         backgroundSize: "cover",
@@ -51,7 +51,7 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-7xl mx-auto lg:px-12">
+      <div className="container  mx-auto lg:px-12">
         <div className="mb-8">
           <h2 className="text-lg text-[#213343]">Show Case</h2>
           <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold textcolor max-w-4xl mt-2">

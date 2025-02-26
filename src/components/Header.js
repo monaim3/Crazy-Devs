@@ -1,25 +1,26 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-
 import logo from "../../public/images/logo.png";
-import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/routing";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [bgColor, setBgColor] = useState("bg-[#FEF4EA] py-4");
-
-  const router = useRouter();
+  const headerT = useTranslations("header");
+  const pathname = usePathname();
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/aboutus" },
-    { name: "Services", href: "/services" },
-    { name: "Career", href: "/career" },
+    { name: "home", href: "/" },
+    { name: "about", href: "/about-us" },
+    { name: "services", href: "/services" },
+    { name: "career", href: "/career" },
   ];
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -53,16 +54,16 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   className={`transition-colors  ${
-                    router.pathname === item.href
+                    pathname === item.href
                       ? "text-[#FF5C35] font-semibold"
                       : "text-[#1C1E22] "
                   }`}
                 >
-                  {item.name}
+                  {headerT(item.name)}
                 </Link>
               ))}
               <Link href="/contact">
-                <Button className=" bg-[#FF5C35]">Contact Us</Button>
+                <Button className=" bg-[#FF5C35]">{headerT("contact")}</Button>
               </Link>
             </div>
           </div>

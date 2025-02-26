@@ -1,7 +1,9 @@
 import { Brygada_1918, Rubik } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header";
-import { Footer } from "../components/Footer";
+import Header from "../../components/Header";
+import { Footer } from "../../components/Footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const brygada = Brygada_1918({
   subsets: ["latin"],
@@ -20,13 +22,17 @@ export const metadata = {
   description: "Engineering Solutions for Tomorrow's Ambitions",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
+  const {locale} = params;
+  const messages = await getMessages();
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${brygada.variable} ${rubik.variable} antialiased`}>
+        <NextIntlClientProvider messages={messages}>
         <Header></Header>
         {children}
         <Footer></Footer>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
