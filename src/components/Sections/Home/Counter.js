@@ -5,6 +5,7 @@ import experience from "../../../../public/images/experience.png";
 import world from "../../../../public/images/world.png";
 import Image from "next/image";
 import CountUp from "react-countup";
+import { useTranslations } from "next-intl";
 
 const stats = [
   {
@@ -27,6 +28,7 @@ const stats = [
   },
 ];
 export default function Counter() {
+    const counterT = useTranslations("counter");
   return (
     <div className="px-4 sm:px-6 lg:px-8">
       <div className="relative container mx-auto ">
@@ -54,11 +56,12 @@ export default function Counter() {
                           key={stat.id}
                           start={0}
                           end={numericValue}
+                          
                           duration={2}
                         />
                         +
                       </p>
-                      <p className="mt-1 text-lg text-gray-500">{stat.name}</p>
+                      <p className="mt-1 text-lg text-gray-500">{counterT(stat.name)}</p>
                     </div>
                   </div>
                 </div>

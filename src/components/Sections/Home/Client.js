@@ -10,6 +10,7 @@ import technology from "../../../../public/images/technology.png";
 import northstart from "../../../../public/images/northstart.png";
 import intdeco from "../../../../public/images/intdeco.png";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 const clients = [
   {
     logo: media,
@@ -38,7 +39,8 @@ export default function Clients({ noPadding }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [visibleItems, setVisibleItems] = useState(5);
-
+  
+   const clientT = useTranslations("client");
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 480) {
@@ -90,11 +92,13 @@ export default function Clients({ noPadding }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold textcolor mb-4">
-            Our Clients
+          {clientT("clienttitle")}
+          
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            30+ customers in over 25 countries grow their businesses with{" "}
-            <span className="text-[#FF5C35]">CrazyDevs</span>
+          {clientT("clientpara")}
+            {" "}
+            <span className="text-[#FF5C35]"> {clientT("crazy")}</span>
           </p>
         </div>
 

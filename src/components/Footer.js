@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/images/footerImg.png";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 export function Footer() {
@@ -30,7 +30,14 @@ export function Footer() {
       router.replace(newPath);
     });
   };
-  console.log(router)
+  const navigation = [
+    { name: "home", href: "/" },
+    { name: "about", href: "/about-us" },
+    { name: "services", href: "/services" },
+    { name: "career", href: "/career" },
+  ];
+  const headerT = useTranslations("header");
+
   return (
     <footer className="bg-[#1E2024] text-white w-full py-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
@@ -70,14 +77,14 @@ export function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <Link
+            {/* <Link
               href="/"
               className="block text-[#FF4D4D] hover:text-[#ff6b6b]"
             >
-              Home
+               {headerT(home)}
             </Link>
             <Link
-              href="/about"
+              href="/about-us"
               className="block text-[#FF4D4D] hover:text-[#ff6b6b]"
             >
               About
@@ -99,7 +106,16 @@ export function Footer() {
               className="block text-[#FF4D4D] hover:text-[#ff6b6b]"
             >
               Contact Us
-            </Link>
+            </Link> */}
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className='block text-[#FF4D4D] hover:text-[#ff6b6b]'
+              >
+                {headerT(item.name)}
+              </Link>
+            ))}
           </div>
 
           {/* Services */}
@@ -165,7 +181,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 text-right">
-          <button disabled={isPending} onClick={handleLanguageChange}  className="text-white hover:text-gray-300">
+          <button disabled={isPending} onClick={handleLanguageChange} className="text-white hover:text-gray-300">
             En Ar
           </button>
         </div>

@@ -5,6 +5,36 @@
         "services": "Services",
         "career": "Career",
         "contact": "Contact Us"
+    },
+    "hero": {
+        "heroText1": "Engineering Solutions for",
+        "heroText2": "Tomorrow's Ambitions",
+        "heroParagraph": "At CrazyDevs, we transform bold ideas into scalable solutions, blending innovation with expertise to drive growth.",
+        "heroBtn": "Get Started"
+    },
+    "counter": {
+        "Projects": "30",
+        "Countries": "Projects",
+        "Year": "20"
+        
+    },
+    "solutions": {
+        "solutions": "Solutions",
+        "subtitle": "Engineered For Growth",
+        "solutionsparagraph": "Transform ideas into competitive advantage with software that's built to evolve as fast as your business does.",
+        "Custom-built for your goals":"Custom-built for your goals",
+        "Efficiency, speed & adaptability":"Efficiency, speed & adaptability",
+        "Third-party API integration":"Third-party API integration"
+    },
+    "Building":{
+        "buildingtitle":"Start Building Smarter",
+        "buildingpara":"At CrazyDevs, we craft custom web and mobile apps, streamline software outsourcing, and amplify brands with digital marketing—all designed to simplify complexity, adapt to your goals, and scale effortlessly. Let’s turn your vision into smart, future-proof solutions.",
+        "buildingbtn":"Get A Free Consultation"
+    },
+    "client":{
+        "clienttitle":"Our Clients",
+        "clientpara":"30+ customers in over 25 countries grow their businesses with ",
+        "crazy":"CrazyDevs"
+       
     }
-
 }

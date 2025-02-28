@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
 import solutions from "../../../../public/images/solutions.png";
+import { useTranslations } from "next-intl";
 const features = [
   {
     icon: Check,
@@ -19,6 +20,7 @@ const features = [
 ];
 
 export default function Solutions() {
+   const solutionT = useTranslations("solutions");
   return (
     <div className="py-12 lg:py-32 bg-[#F6F9FC]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,14 +34,16 @@ export default function Solutions() {
           </div>
           <div>
             <h2 className="text-3xl sm:text-4xl  textcolor mb-6">
-              <span className="font-600"> Solutions</span> <br />
+              <span className="font-600">{solutionT("solutions")} </span> <br />
               <span className="text-primary font-bold">
-                Engineered For Growth
+               
+                {solutionT("subtitle")}
               </span>
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Transform ideas into competitive advantage with software that's
-              built to evolve as fast as your business does.
+               
+            {solutionT("solutionsparagraph")}
+          
             </p>
             <div className="space-y-6">
               {features.map((feature, index) => (
@@ -49,7 +53,8 @@ export default function Solutions() {
                   </div>
                   <div>
                     <h3 className="text-lg font-400 text-gray-900">
-                      {feature.title}
+                    {solutionT(feature.title)}
+                    
                     </h3>
                   </div>
                 </div>
