@@ -18,7 +18,7 @@ export default function Header() {
     { name: "home", href: "/" },
     { name: "about", href: "/about-us" },
     { name: "services", href: "/services" },
-    { name: "career", href: "/career" },
+    { name: "career", href: "#" },
   ];
 
   useEffect(() => {
@@ -91,13 +91,16 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 uppercase hover:text-primary hover:bg-gray-50"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 bg-[#FF5C35]">Contact Us</Button>
+             
+             <Link href="/contact">
+                <Button className=" bg-[#FF5C35] w-full mt-4">{headerT("contact")}</Button>
+              </Link>
             </div>
           </div>
         )}

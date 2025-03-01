@@ -11,6 +11,7 @@ import mysql from "../../../../public/images/mysql 1.png";
 import nodejs from "../../../../public/images/nodejs 1.png";
 import laraval from "../../../../public/images/laraval 1.png";
 import NextJs from "../../../../public/images/nextjs 1.png";
+import { useTranslations } from "next-intl";
 const capabilities = [
   {
     id: "web",
@@ -107,14 +108,15 @@ const capabilities = [
 export default function Capabilities({ noPadding }) {
   const [activeTab, setActiveTab] = useState(capabilities[0].id);
   const activeCapability = capabilities.find((cap) => cap.id === activeTab);
-
+const capabilityT = useTranslations("capablity");
   return (
     <section className={`${noPadding ? "pt-10 pb-20" : "py-20 bg-gray-50"}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold textcolor mb-4">
-              Our Technological Capabilities
+            {capabilityT("capablitytitle")}
+         
             </h2>
           </div>
           {/* Tabs Navigation */}
@@ -138,7 +140,10 @@ export default function Capabilities({ noPadding }) {
                     }`}
                   />
                 )}
-                <span className="font-medium">{capability.title}</span>
+                <span className="font-medium">
+                 
+                  {capabilityT(capability.title)}
+                  </span>
               </button>
             ))}
           </div>

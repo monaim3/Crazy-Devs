@@ -7,18 +7,18 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 import female from "../../../../public/images/female.png";
+import { useTranslations } from "next-intl";
 
 const showcaseData = [
   {
     id: 1,
-    title: "How a niche luxury brand generates 10,000 segmented leads a month.",
+    title: "Review1",
     image: female,
     services: ["Web Development", "Mobile App Development"],
   },
   {
     id: 2,
-    title:
-      "How startups quickly scale their digital presence with our solutions.",
+    title:"Review2",
     image: female,
     services: ["Web Development", "Mobile App Development"],
   },
@@ -26,7 +26,7 @@ const showcaseData = [
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  const showCaseT = useTranslations("showcase");
   const nextSlide = () => {
     setCurrentSlide((prev) => {
       const nextIndex = (prev + 1) % showcaseData.length;
@@ -53,10 +53,9 @@ export default function Home() {
     >
       <div className="container  mx-auto lg:px-12">
         <div className="mb-8">
-          <h2 className="text-lg text-[#213343]">Show Case</h2>
+          <h2 className="text-lg text-[#213343]">   {showCaseT("showcasetitle")}</h2>
           <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold textcolor max-w-4xl mt-2">
-            How other companies successfully generate & qualify leads with Crazy
-            Devs
+          {showCaseT("showcasepara")}
           </h1>
         </div>
 
@@ -84,7 +83,8 @@ export default function Home() {
                               "linear-gradient(to right, #f8f2ea 30%, #979b9b 90%)",
                           }}
                         >
-                          {service}
+                           {showCaseT(service)}
+                          
                         </Button>
                       ))}
                     </div>
@@ -114,11 +114,13 @@ export default function Home() {
                         <Card className="bg-[#213343] text-white px-6 py-2 lg:-rotate-12 lg:px-4 lg:py-12 rounded-2xl relative group cursor-pointer transform-style-3d transition-transform duration-700 ease-in-out">
                           <div>
                             <h3 className="text-xl font-semibold">
-                              {showcase.title}
+                            
+                            {showCaseT(showcase.title)}
+                              
                             </h3>
                             <div className="flex justify-between mt-12">
                               <p className="text-gray-300">
-                                Read The Full Story
+                              {showCaseT("Read The Full Story")}
                               </p>
                               <div className="relative">
                                 <button

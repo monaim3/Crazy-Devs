@@ -54,7 +54,6 @@ export default function Solutions() {
                   <div>
                     <h3 className="text-lg font-400 text-gray-900">
                     {solutionT(feature.title)}
-                    
                     </h3>
                   </div>
                 </div>

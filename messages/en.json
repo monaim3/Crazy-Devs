@@ -36,5 +36,98 @@
         "clientpara":"30+ customers in over 25 countries grow their businesses with ",
         "crazy":"CrazyDevs"
        
+    },
+
+    "showcase":{
+        "showcasetitle":"Show Case",
+        "showcasepara":"How other companies successfully generate & qualify leads with Crazy Devs",
+        "Web Development":"Web Development",
+        "Mobile App Development":"Mobile App Development",
+        "Review1":"How a niche luxury brand generates 10,000 segmented leads a month",
+        "Review2":"How startups quickly scale their digital presence with our solutions.",
+        "Read The Full Story":"Read The Full Story"
+
+    },
+    "capablity":{
+        "capablitytitle":"Our Technological Capabilities",
+        "WEB":"WEB",
+        "MOBILE":"MOBILE",
+        "CMS":"CMS",
+        "SUPPORT TOOL":"SUPPORT TOOL",
+        "APP SERVER":"APP SERVER",
+        "CLOUD COMPUTING":"CLOUD COMPUTING",
+        "TESTING &QA":"TESTING &QA",
+        "CONTENT DELIVERY NETWORD":"CONTENT DELIVERY NETWORD"
+    },
+    "footer":{
+        "copyright":"© 2019 - 2025 All rights reserved.",
+        "Web Development":"Web Development",
+        "Mobile App Development":"Mobile App Development",
+        "Cloud & DevOps":"Cloud & DevOps",
+        "Digital Mareting":"Digital Mareting",
+        "Digital Product Design":"Digital Product Design",
+        "SRAugmentation":"SRAugmentation",
+        "BD OFFICE:":"BD OFFICE:",
+        "326, New Elephant Road, Dhaka 1205, Bangladesh":"326, New Elephant Road, Dhaka 1205, Bangladesh.",
+        "SAUDI OFFICE :":"SAUDI OFFICE:",
+        "Riyadh, KSA :":"Riyadh, KSA"
+    },
+    "about":{
+        "aboutTitle":"Building Smarter Futures",
+        "aboutPara":"At CrazyDevs, we transform ideas into software that leads markets and overcomes challenges, crafting scalable systems with precision engineering and strategic insight.",
+        "aboutBtn":"Get Started",
+        "Mission":"Mission",
+        "Vision":"Vision",
+        "Our Mission":"Our Mission",
+        "Our vision":"Our Vission",
+        "missionPara":"At CrazyDevs, our mission is to empower businesses through",
+        "visionPara":"We envision a future where technology seamlessly enhances human potential",
+        "We build to outpace, not just outlast":"We build to outpace, not just outlast",
+        "Deliver intuitive solutions that simplify complexity & drive measurable results":"Deliver intuitive solutions that simplify complexity & drive measurable results",
+        "Collaborate with purpose":"Collaborate with purpose",
+        "To be the global leader in innovative software solutions":"To be the global leader in innovative software solutions",
+        "Create lasting impact through technological excellence":"Create lasting impact through technological excellence",
+        "Foster a culture of continuous learning and growth":"Foster a culture of continuous learning and growth"
+    },
+    "service":{
+        "serviceTitle":"Our Technological Solutions",
+        "servicePara":"Turning ideas into impactful software solutions, we specialize in custom development, mobile apps, and enterprise integration to keep your business ahead in a digital-first world.",
+        "serviceBtn":"Get Started",
+        "WebApp Development":"WebApp Development",
+        "MobileApp Development":"MobileApp Development",
+        "Cloud & DevOps Solution":"Cloud & DevOps Solution",
+        "Digital Marketing":"Digital Marketing",
+        "Digital Product Design":"Digital Product Design",
+        "Software Resource Augmentation":"Software Resource Augmentation",
+        "Key Features":"Key Features",
+        "Custom Web Development":"Custom Web Development",
+        "Responsive Design":"Responsive Design",
+        "Performance & Security Optimization":"Performance & Security Optimization",
+        "Custom Mobile App Solutions":"Custom Mobile App Solutions",
+        "Cross-Platform Development":"Cross-Platform Development",
+        "Scalable & Secure Apps":"Scalable & Secure Apps",
+        "Cloud Infrastructure Management":"Cloud Infrastructure Management",
+        "CI/CD Implementation":"CI/CD Implementation",
+        "SEO & Content Marketing":"SEO & Content Marketing",
+        "Social Media Management":"Social Media Management",
+        "Performance Marketing":"Performance Marketing",
+        "User-Centered Design":"User-Centered Design",
+        "Prototyping & Wireframing":"Prototyping & Wireframing",
+        "End-to-End Product Design":"End-to-End Product Design",
+        "On-Demand Talent Acquisition":"On-Demand Talent Acquisition",
+        "Flexible Engagement Models":"Flexible Engagement Models",
+        "Seamless Integration":"Seamless Integration",
+        "Learn More":"Learn More",
+        "Small Business Bundle":"Small Business Bundle",
+        "business":"The Starter edition of every Drazydevs product, bundled together at a discounted price for your startup or small business. Find and reach customers, grow sales and get paid faster, and organize customer data.",
+        "all":"— all on one unified platform.",
+        "get": "Get Started",
+        "career":"Coming Soon",
+        "Web App Development":"Web App Development"
+    },
+    "Contact":{
+        "Contact us":"CONTACT US",
+        "contactPara":"Got questions or need help? Our team is ready to offer personalized solutions, reliable support, and expert advice to help you reach your goals.",
+        "contactBtn":"Consult With Us"
     }
 }

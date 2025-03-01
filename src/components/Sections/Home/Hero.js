@@ -21,7 +21,7 @@ const Hero = () => {
               <Image
                 src={HeroImg}
                 alt="Hero Image"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover lg:mt-4"
               />
             </motion.div>
           </div>

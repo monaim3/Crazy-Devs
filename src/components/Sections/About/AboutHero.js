@@ -1,14 +1,14 @@
+import { useTranslations } from "next-intl";
 import HeroImg from "../../../../public/images/about.png";
 import CommonHero from "../Home/CommonHero";
 const AboutHero = () => {
+   const missionT = useTranslations("about");
   return (
     <CommonHero
       imageSrc={HeroImg}
-      title="Building Smarter Futures"
-      description="At CrazyDevs, we transform ideas into software that leads
-            markets and overcomes challenges, crafting scalable systems
-            with precision engineering and strategic insight."
-      buttonText="Get Started"
+      title={missionT("aboutTitle")}
+      description={missionT("aboutPara")}
+      buttonText={missionT("aboutBtn")}
       //   onButtonClick={() => alert("Button Clicked!")}
       imagePosition="left"
       textAlignment="right"

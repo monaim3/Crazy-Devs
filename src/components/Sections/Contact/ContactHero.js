@@ -1,13 +1,15 @@
+import { useTranslations } from "next-intl";
 import ContactImg from "../../../../public/images/Contact.png";
 import CommonHero from "../Home/CommonHero";
 
 const ContactHero = () => {
+    const contactBtn = useTranslations("Contact");
   return (
     <CommonHero
       imageSrc={ContactImg}
-      title="Contact us"
-      description="Got questions or need help? Our team is ready to offer personalized solutions, reliable support, and expert advice to help you reach your goals."
-      buttonText="Consult With Us"
+      title={contactBtn("Contact us")}
+      description={contactBtn("contactPara")}
+      buttonText={contactBtn("contactBtn")}
       //   onButtonClick={() => alert("Button Clicked!")}
       imagePosition="left"
       textAlignment="right"

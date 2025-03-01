@@ -13,7 +13,6 @@ const CommonHero = ({
   imageAlt = "Hero Image",
   imagePosition = "left", // "left" or "right"
   padding = " pt-32 pb-16 lg:pb-32 ",
-  margin = "mx-auto",
   containerClasses = "container mx-auto px-4 sm:px-6 lg:px-8",
   textAlignment = "center", // "left" or "right"
 }) => {
@@ -35,13 +34,13 @@ const CommonHero = ({
               <Image
                 src={imageSrc}
                 alt={imageAlt}
-                className={`w-[70%] h-full ${margin} object-cover`}
+                className={`w-[70%] h-full object-cover mt-6 mx-auto lg:mx-0`}
               />
             </motion.div>
           </div>
 
           {/* Text Content */}
-          <div className={`text-${textAlignment} lg:text-${textAlignment}`}>
+          <div className="text-center lg:text-right">
             <h1 className="font-brygada text-4xl sm:text-3xl lg:text-4xl font-bold textcolor lg:leading-[64px]">
               <span className="font-bold text-4xl sm:text-2xl lg:text-3xl">
                 {title}

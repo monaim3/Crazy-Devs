@@ -36,5 +36,98 @@
         "clientpara":"يعمل أكثر من 30 عميلاً في أكثر من 25 دولة على تنمية أعمالهم باستخدام",
         "crazy":"CrazyDevs"
        
+    },
+    "showcase":{
+        "showcasetitle":"عرض",
+        "showcasepara":"كيف تنجح الشركات الأخرى في توليد العملاء المحتملين وتأهيلهم باستخدام Crazy Devs",
+        "Web Development":"تطوير الويب",
+        "Mobile App Development":"تطوير تطبيقات الهاتف المحمول",
+        "Review1":"كيف تولد علامة تجارية فاخرة متخصصة 10000 عميل محتمل شهريًا",
+        "Review2":"كيف تقوم الشركات الناشئة بتوسيع نطاق تواجدها الرقمي بسرعة من خلال حلولنا.",
+        "Read The Full Story":"اقرأ القصة كاملة"
+
+    },
+    "capablity":{
+        "capablitytitle":"قدراتنا التكنولوجية",
+        "WEB":"الويب",
+        "MOBILE":"متحرك",
+        "CMS":"نظام إدارة المحتوى",
+        "SUPPORT TOOL":"أداة الدعم",
+        "APP SERVER":"خادم التطبيقات",
+        "CLOUD COMPUTING":"الحوسبة السحابية",
+        "TESTING &QA":"الاختبار وضمان الجودة",
+        "CONTENT DELIVERY NETWORD":"شبكة تسليم المحتوى"
+    },
+    "footer":{
+        "copyright":"© 2019 - 2025 جميع الحقوق محفوظة.",
+        "Web Development":"تطوير الويب",
+        "Mobile App Development":"تطوير تطبيقات الهاتف المحمول",
+        "Cloud & DevOps":"عمليات تطوير السحابة",
+        "Digital Mareting":"التسويق الرقمي",
+        "Digital Product Design":"تصميم المنتجات الرقمية",
+        "SRAugmentation":"SRAugmentation",
+        "BD OFFICE:":"مكتب بنغلاديش",
+        "326, New Elephant Road, Dhaka 1205, Bangladesh":"326، طريق الفيل الجديد، دكا 1205، بنغلاديش.",
+        "SAUDI OFFICE :":"المكتب السعودي:",
+        "Riyadh, KSA :":"الرياض، المملكة العربية السعودية"
+    },
+    "about":{
+        "aboutTitle":"بناء مستقبل أكثر ذكاءً",
+        "aboutPara":"في CrazyDevs، نقوم بتحويل الأفكار إلى برمجيات تقود الأسواق وتتغلب على التحديات، ونصمم أنظمة قابلة للتطوير ذات هندسة دقيقة ورؤية استراتيجية.",
+        "aboutBtn":"ابدأ",
+        "Mission":"مهمة",
+        "Vision":"رؤية",
+        "Our Mission":"مهمتنا",
+        "Our vision":"رؤيتنا",
+        "missionPara":"في CrazyDevs، مهمتنا هي تمكين الشركات من خلال",
+        "visionPara":"نحن نتصور مستقبلًا تعمل فيه التكنولوجيا على تعزيز الإمكانات البشرية بسلاسة",
+        "We build to outpace, not just outlast":"نحن نبني من أجل التفوق، وليس فقط الصمود",
+        "Deliver intuitive solutions that simplify complexity & drive measurable results":"تقديم حلول بديهية تعمل على تبسيط التعقيد وتحقيق نتائج قابلة للقياس",
+        "Collaborate with purpose":"التعاون مع الهدف",
+        "To be the global leader in innovative software solutions":"أن نكون الشركة الرائدة عالميًا في مجال الحلول البرمجية المبتكرة",
+        "Create lasting impact through technological excellence":"خلق تأثير دائم من خلال التميز التكنولوجي",
+        "Foster a culture of continuous learning and growth":"تعزيز ثقافة التعلم المستمر والنمو"
+    },
+    "service":{
+        "serviceTitle":"حلولنا التكنولوجية",
+        "servicePara":"لتحويل الأفكار إلى حلول برمجية مؤثرة، نحن متخصصون في التطوير المخصص وتطبيقات الهاتف المحمول وتكامل المؤسسات للحفاظ على عملك في المقدمة في عالم رقمي أولاً.",
+        "serviceBtn":"ابدأ",
+        "WebApp Development":"تطوير تطبيقات الويب",
+        "MobileApp Development":"تطوير تطبيقات الهاتف المحمول",
+        "Cloud & DevOps Solution":"الحلول السحابية وعمليات التطوير والتشغيل",
+        "Digital Marketing":"التسويق الرقمي",
+        "Digital Product Design":"تصميم المنتجات الرقمية",
+        "Software Resource Augmentation":"زيادة موارد البرمجيات",
+        "Key Features":"الميزات الرئيسية",
+        "Custom Web Development":"تطوير الويب المخصص",
+        "Responsive Design":"تصميم سريع الاستجابة",
+        "Performance & Security Optimization":"تحسين الأداء والأمن",
+        "Custom Mobile App Solutions":"حلول تطبيقات الهاتف المحمول المخصصة",
+        "Cross-Platform Development":"تطوير عبر المنصات",
+        "Scalable & Secure Apps":"تطبيقات قابلة للتطوير وآمنة",
+        "Cloud Infrastructure Management":"إدارة البنية التحتية السحابية",
+        "CI/CD Implementation":"تنفيذ CI/CD",
+        "SEO & Content Marketing":"تحسين محركات البحث وتسويق المحتوى",
+        "Social Media Management":"إدارة وسائل التواصل الاجتماعي",
+        "Performance Marketing":"تسويق الأداء",
+        "User-Centered Design":"تصميم يركز على المستخدم",
+        "Prototyping & Wireframing":"النماذج الأولية والإطار السلكي",
+        "End-to-End Product Design":"تصميم المنتج من النهاية إلى النهاية",
+        "On-Demand Talent Acquisition":"اكتساب المواهب عند الطلب",
+        "Flexible Engagement Models":"نماذج المشاركة المرنة",
+        "Seamless Integration":"التكامل السلس",
+        "Learn More":"يتعلم أكثر",
+        "Small Business Bundle":"حزمة الأعمال الصغيرة",
+        "business":"الإصدار المبتدئ من كل منتج من منتجات Crazydevs، مُجمَّع معًا بسعر مخفض لشركتك الناشئة أو شركتك الصغيرة. يمكنك العثور على العملاء والوصول إليهم وزيادة المبيعات والحصول على الأموال بشكل أسرع وتنظيم بيانات العملاء.",
+        "all":"- كل ذلك على منصة واحدة موحدة.",
+        "get": "ابدأ",
+        "career":"قريباً",
+        "Web App Development":"تطوير تطبيقات الويب"
+
+    },
+    "Contact":{
+        "Contact us":"اتصل بنا",
+         "contactPara":"هل لديك أسئلة أو بحاجة إلى مساعدة؟ فريقنا على استعداد لتقديم حلول مخصصة ودعم موثوق ومشورة الخبراء لمساعدتك في تحقيق أهدافك.",
+        "contactBtn":"استشر معنا"
     }
 }

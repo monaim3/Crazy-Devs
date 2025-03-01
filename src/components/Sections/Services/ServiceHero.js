@@ -1,18 +1,20 @@
+import { useTranslations } from "next-intl";
 import ServiceImg from "../../../../public/images/service.png";
 import CommonHero from "../Home/CommonHero";
 
 const ServiceHero = () => {
+   const serviceT = useTranslations("service");
   return (
     <CommonHero
       imageSrc={ServiceImg}
-      title="Our Technological Solutions"
-      description="Turning ideas into impactful software solutions, we specialize in custom development, mobile apps, and enterprise integration to keep your business ahead in a digital-first world."
-      buttonText="Get Started"
+      title={serviceT("serviceTitle")}
+      description={serviceT("servicePara")}
+      buttonText={serviceT("serviceBtn")}
       //   onButtonClick={() => alert("Button Clicked!")}
       imagePosition="left"
       textAlignment="right"
       padding="py-20 lg:py-32"
-      margin="mx-auto"
+      // margin="mx-auto"
     />
   );
 };
