@@ -20,7 +20,7 @@ const showcaseData = [
     id: 2,
     title:"Review2",
     image: female,
-    services: ["Web Development", "Mobile App Development"],
+    services: ["Graphics", "Digital Marketing"],
   },
 ];
 

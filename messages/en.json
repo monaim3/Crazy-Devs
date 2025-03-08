@@ -13,9 +13,12 @@
         "heroBtn": "Get Started"
     },
     "counter": {
-        "Projects": "30",
-        "Countries": "Projects",
-        "Year": "20"
+        "Projects": "Projects",
+        "30+": "30+",
+        "20+": "20",
+        "Countries":"Countries",
+        "Year": "Year",
+        "7+": "7+"
         
     },
     "solutions": {
@@ -45,8 +48,9 @@
         "Mobile App Development":"Mobile App Development",
         "Review1":"How a niche luxury brand generates 10,000 segmented leads a month",
         "Review2":"How startups quickly scale their digital presence with our solutions.",
-        "Read The Full Story":"Read The Full Story"
-
+        "Read The Full Story":"Read The Full Story",
+        "Graphics":"Graphics",
+        "Digital Marketing":"Digital Marketing"
     },
     "capablity":{
         "capablitytitle":"Our Technological Capabilities",
